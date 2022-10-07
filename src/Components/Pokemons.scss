@@ -1,0 +1,92 @@
+$primaryColor: rgb(248, 223, 35);
+
+.container {
+  max-width: 1024px;
+  min-width: 420px;
+  margin: 0 auto;
+
+  .perfil {
+    float: left;
+    width: 20%;
+    height: 380px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: rgb(5, 5, 71);
+    box-shadow: 8px -1px 28px -14px rgba(0, 0, 0, 0.75);
+
+    @media (max-width: 896px) {
+      width: 26%;
+    }
+
+    @media (max-width: 700px) {
+      width: 32%;
+      margin-left: 60px;
+    }
+
+    @media (max-width: 600px) {
+      width: 33%;
+    }
+
+    @media (max-width: 550px) {
+      width: 60%;
+      float: none;
+    }
+
+    .pokemon-name {
+      margin: 20px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "Bungee Spice", cursive;
+    }
+
+    .pokemon-image {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      margin: 20px auto;
+      border-radius: 50px;
+      background-color: $primaryColor;
+      border: 1px solid rgba(0, 0, 0, 0.551);
+    }
+
+    .pokemon-moves {
+      padding: 10px;
+      width: 150px;
+      border: none;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 50px;
+      font-family: "Quicksand", sans-serif;
+      background-color: $primaryColor;
+    }
+
+    .pokemon-abilities {
+      margin-top: 10px;
+
+      .checkbox {
+        display: flex;
+        font-size: 18px;
+        color: $primaryColor;
+        font-family: "Sofia", cursive;
+
+        span {
+          padding-left: 5px;
+        }
+
+        .checked {
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    .move-details {
+      padding: 5px;
+      font-size: 18px;
+      margin-top: 20px;
+      color: $primaryColor;
+      font-family: "Quicksand", sans-serif;
+      background-color: rgb(25, 41, 108);
+    }
+  }
+}
